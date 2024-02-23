@@ -1,0 +1,45 @@
+body{
+    background-color: rgb(255, 255, 255);
+    margin: 1%;
+}
+.diego{
+    text-align: justify;
+    justify-content: left;
+    display: flex;
+    float: none;
+    font-family: 'Arial', sans-serif; 
+    color: black;
+    margin: auto;
+    background-color: rgb(255, 255, 255); 
+}
+.pepones{
+    float: inline-end;
+    width: 90%;
+}
+img{
+    display: block;
+    border-radius: 50%;
+    float: right;
+    padding: 2%;
+    height: 300px;
+    width: 280px;
+    flex-direction: row;
+
+}
+.container{
+    text-align: center;
+    padding: 130px;
+    background-color: rgb(255, 255, 255);
+}
+.opciones{
+    background-color: rgb(184, 164, 138);
+    width: 500px;
+    margin: 0 auto;
+}
+.color-opcion{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="/trabajo22/c.css">
+</head>
+<body>
+<div class="diegoelpro">
+    <img src="/trabajo22/luffy_luffy.png" alt="" id="cambiar-bocho">
+</div>
+<section class="diego">
+    <div class="pepones">
+        <h1 id="nombrePersonaje">Luffy</h1>
+        <p id="descripcionPersonaje">"Luffy" es el apodo de Monkey D. Luffy, el protagonista principal del manga y anime japonés "One Piece", creado por Eiichiro Oda. Luffy es un joven pirata que busca el tesoro más grande del mundo, conocido como "One Piece", para convertirse en el Rey de los Piratas. Posee una personalidad extrovertida, valiente y a menudo ingenua, pero también es extremadamente determinado y tiene un fuerte sentido del compañerismo y la lealtad hacia sus amigos y tripulación. Luffy tiene habilidades especiales debido a que consume una "Fruta del Diablo", específicamente la "Fruta Gomu Gomu", que le otorga la capacidad de estirar su cuerpo como si fuera goma. A lo largo de la serie, él y su tripulación, conocida como los Piratas del Sombrero de Paja, se enfrentan a numerosos desafíos mientras navegan por el peligroso Grand Line en busca de su sueño.</p>
+    </div>
+</section>
+
+<div class="container">
+  <div class="opciones">
+      <label>
+          <input type="radio" name="color" style="background-color: red;" onchange="cambiarPersonaje('luffy', 'Luffy', 'Luffy es el apodo de Monkey D. Luffy, el protagonista principal del manga y anime japonés One Piece, creado por Eiichiro Oda. Luffy es un joven pirata que busca el tesoro más grande del mundo, conocido como One Piece, para convertirse en el Rey de los Piratas. Posee una personalidad extrovertida, valiente y a menudo ingenua, pero también es extremadamente determinado y tiene un fuerte sentido del compañerismo y la lealtad hacia sus amigos y tripulación. Luffy tiene habilidades especiales debido a que consume una Fruta del Diablo, específicamente la Fruta Gomu Gomu, que le otorga la capacidad de estirar su cuerpo como si fuera goma. A lo largo de la serie, él y su tripulación, conocida como los Piratas del Sombrero de Paja, se enfrentan a numerosos desafíos mientras navegan por el peligroso Grand Line en busca de su sueño.')"/>
+          Luffy
+      </label>
+      <label>
+          <input type="radio" name="color" style="background-color: blue;" onchange="cambiarPersonaje('zoro', 'Zoro', 'Roronoa Zoro es uno de los personajes principales de One Piece. Es un espadachín experto y un miembro valioso de la tripulación de Monkey D. Luffy. Zoro tiene una personalidad seria y enfocada en su objetivo, siempre buscando convertirse en el mejor espadachín del mundo. Su sueño es superar al legendario espadachín Dracule Mihawk y convertirse en el espadachín más fuerte del mundo.')"/>
+          Zoro
+      </label>
+      <label>
+          <input type="radio" name="color" style="background-color: yellow;" onchange="cambiarPersonaje('sanji', 'Sanji', 'Sanji es uno de los miembros de la tripulación de Monkey D. Luffy, conocidos como los Piratas del Sombrero de Paja. Es el cocinero del barco y se especializa en el estilo de combate de pierna. A pesar de ser un mujeriego empedernido, Sanji siempre muestra un profundo respeto por las mujeres y un sentido del honor en la batalla.')"/>
+          Sanji
+      </label>
+      <label>
+          <input type="radio" name="color" style="background-color: white;" onchange="cambiarPersonaje('usopp', 'Usopp', 'Usopp es un miembro de los Piratas del Sombrero de Paja y es conocido como el francotirador de la tripulación. A pesar de su tendencia a contar historias exageradas, tiene un corazón valiente y siempre está dispuesto a proteger a sus amigos.')"/>
+          Usopp
+      </label>
+  </div>
+</div>
+<script>
+function cambiarPersonaje(color, nombre, descripcion) {
+    document.getElementById("cambiar-bocho").src = "/trabajo22/luffy_"+color+".png";
+    document.getElementById("nombrePersonaje").innerText = nombre;
+    document.getElementById("descripcionPersonaje").innerText = descripcion;
+}
+</script>
+</body>
+</html>
